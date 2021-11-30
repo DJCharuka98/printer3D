@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9824a9a-5613-43e2-ae29-b4761d3a33ed">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="Customer_Name" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="432" y="69" width="50" height="20" uuid="3267a0ff-1cfc-4711-8c35-47e507e65a88"/>
+				<text><![CDATA[DATE  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="10" width="231" height="49" uuid="2f55a07d-375e-4574-867f-f8aacef24e94"/>
+				<textElement>
+					<font fontName="Century Gothic" size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3D PRINTING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="10" width="144" height="36" uuid="50287056-c363-4c34-ba8e-63abd10254a5"/>
+				<textElement textAlignment="Right">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INVOICE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="31" width="141" height="19" uuid="17460881-d334-4a7d-b3e3-fd63d98a7c97"/>
+				<text><![CDATA[Phone No: 0703643797]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="11" width="202" height="20" uuid="8a7fd829-a351-412d-b279-a633816a0f6c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[NO 29,Ambahagawatta,Minuwangoda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="30" width="63" height="20" uuid="44fb2c3e-f4bf-4bba-8253-cf137874ff6b"/>
+				<text><![CDATA[INVOICE #]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="50" width="202" height="20" uuid="4154dfab-392b-430a-80fa-647da2c601a6"/>
+				<text><![CDATA[Email : somanthamanuranga@gmail.com]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="11" width="100" height="20" uuid="bae373a8-49b6-441a-ae66-1391877d868e"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[BILL TO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="20" y="36" width="100" height="20" uuid="f81f18b2-c103-4411-99ef-d60a0ad33a93"/>
+				<textFieldExpression><![CDATA[$P{Customer_Name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
